@@ -1,0 +1,45 @@
+body {
+    background-color: #757575;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: #636363;
+    padding: 20px;
+    font-family: 'Lorem Ipsum', Arial, sans-serif;
+    text-align: center;
+    position: relative;
+}
+  
+.block {
+    display: inline-block;
+    width: 25%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #ffeab1;
+    margin: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    font-family: 'Lorem Ipsum', Arial, sans-serif;
+    position: relative;
+    overflow: visible; 
+}
+  
+.block h2 {
+    text-shadow: 2px -2px 2px #fff, 2px 2px 2px #444;
+    color: #ffecbd;
+    margin-bottom: 20px;
+}
+
+.block::before {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    width: 40%; 
+    height: 30px; 
+    background-color: #000; 
+    transform: translateX(-50%);
+    border-radius: 5px;
+}
